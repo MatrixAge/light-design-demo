@@ -1,0 +1,23 @@
+{
+      "compilerOptions": {
+            "target": "esnext",
+            "module": "esnext",
+            "moduleResolution": "node",
+            "resolveJsonModule": true,
+            "importHelpers": true,
+            "esModuleInterop": true,
+            "isolatedModules": true,
+            "sourceMap": true,
+            "strict": true,
+            "baseUrl": "./",
+            "paths": {
+                  "/@root/*": [
+                        "./*"
+                  ],
+                  "/@/*": [
+                        "src/*"
+                  ]
+            },
+            "allowSyntheticDefaultImports": true
+      }
+}
