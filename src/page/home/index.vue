@@ -1,16 +1,32 @@
 <template>
+
       <div class="menu_items_wrap w_100 border_box">
-            <div class="menu_items w_100 border_box flex flex_column">
+            <div
+                  class="menu_items w_100 border_box flex flex_column"
+                  :class="group?'group':''"
+            >
                   <div
                         class="menu_item w_100 border_box flex flex_column"
                         v-for="item in menu_items"
                         :key="item.path"
                   >
-                        <router-link
-                              class="title"
-                              :to="'/com/'+item.path"
-                              @click.native=""
-                        >{{item.name}}</router-link>
+                        <div class="title_wrap w_100 border_box flex justify_between align_center">
+                              <router-link
+                                    class="title"
+                                    :to="'/com/'+item.path"
+                                    @click.native=""
+                              >{{item.name}}</router-link>
+                              <div
+                                    class="icon_close_wrap flex justify_center align_center"
+                                    @click.stop="back"
+                              >
+                                    <img
+                                          class="icon_close"
+                                          src="/@/assets/icon_close.svg"
+                                          alt="icon_close"
+                                    >
+                              </div>
+                        </div>
                         <div class="components w_100 border_box flex flex_column">
                               <router-link
                                     class="component w_100 border_box flex justify_between align_center"

@@ -22,6 +22,10 @@ export default [
 			{
 				name: 'Icon',
 				description: '图标'
+			},
+			{
+				name: 'Scroller',
+				description: '滚动容器'
 			}
 		]
 	},
@@ -234,38 +238,6 @@ export default [
 			{
 				name: 'Pagenation',
 				description: '分页'
-			}
-		]
-	},
-	{
-		name: '扩展资源',
-		path: 'more',
-		description: '其他相关资源',
-		components: [
-			{
-				name: 'atom.css',
-				path: 'atom',
-				description: '通用CSS库'
-			},
-			{
-				name: 'XD资源包',
-				path: 'xd',
-				description: 'For Adobe XD'
-			},
-			{
-				name: 'Sketch资源包',
-				path: 'sketch',
-				description: 'For Sketch'
-			},
-			{
-				name: 'Axure资源包',
-				path: 'axure',
-				description: 'For Axure'
-			},
-			{
-				name: 'Cloud Pack',
-				path: 'cloud_pack',
-				description: '独立开发利器'
 			}
 		]
 	}
