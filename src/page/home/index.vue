@@ -1,5 +1,4 @@
 <template>
-
       <div class="menu_items_wrap w_100 border_box">
             <div
                   class="menu_items w_100 border_box flex flex_column"
