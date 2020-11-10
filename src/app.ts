@@ -1,9 +1,9 @@
-import menu_items from '/@/data/menu_items';
+import menu_items from '/@/data/menu_items'
 
 export default {
-      data() {
-            return {
-                  menu_items
-            }
-      }
+	data () {
+		return {
+			menu_items
+		}
+	}
 }
